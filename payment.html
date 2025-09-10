@@ -119,7 +119,7 @@
                     
                     <div class="form-actions">
                         <button type="submit" class="btn btn-primary">Process Payment</button>
-                        <button type="button" class="btn btn-secondary">Save as Draft</button>
+                        <button type="button" class="btn btn-secondary" id="save-payment-draft">Save as Draft</button>
                         <button type="reset" class="btn btn-outline">Clear Form</button>
                     </div>
                 </form>
@@ -127,34 +127,11 @@
             
             <div class="payment-history">
                 <h3>Payment History</h3>
-                <div class="payment-item">
-                    <div class="payment-header">
-                        <span class="payment-amount">₵25.00</span>
-                        <span class="payment-status completed">Completed</span>
-                    </div>
-                    <div class="payment-details">
-                        <p><strong>Reference:</strong> TXN-2024-001</p>
-                        <p><strong>Method:</strong> Credit Card</p>
-                        <p><strong>Date:</strong> 2025-09-10</p>
-                        <p><strong>Description:</strong> Monthly subscription</p>
-                    </div>
-                </div>
-                
-                <div class="payment-item">
-                    <div class="payment-header">
-                        <span class="payment-amount">₵15.00</span>
-                        <span class="payment-status pending">Pending</span>
-                    </div>
-                    <div class="payment-details">
-                        <p><strong>Reference:</strong> TXN-2024-002</p>
-                        <p><strong>Method:</strong> Mobile Money</p>
-                        <p><strong>Date:</strong> 2025-01-12</p>
-                        <p><strong>Description:</strong> One-time payment</p>
-                    </div>
-                </div>
+                <div id="payment-history-list"></div>
             </div>
         </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
