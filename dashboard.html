@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="mobile-menu-toggle">☰</button>
+    
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="sidebar-title">Todo List App</h1>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="dashboard.html" class="sidebar-link active">📊 Dashboard</a></li>
+            <li><a href="member.html" class="sidebar-link">👤 Member</a></li>
+            <li><a href="payment.html" class="sidebar-link">💳 Payment</a></li>
+            <li><a href="index.html" class="sidebar-link">🚪 Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="dashboard-container">
+            <h2>Dashboard - My Todo List</h2>
+            
+            <div class="todo-form">
+                <h3>Add New Todo</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="todo-title">Todo Title:</label>
+                        <input type="text" id="todo-title" name="todo-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="todo-description">Description:</label>
+                        <textarea id="todo-description" name="todo-description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="todo-priority">Priority:</label>
+                        <select id="todo-priority" name="todo-priority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="todo-due-date">Due Date:</label>
+                        <input type="date" id="todo-due-date" name="todo-due-date">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Todo</button>
+                </form>
+            </div>
+
+            <div class="todo-list">
+                <h3>My Todos</h3>
+                <div class="todo-item">
+                    <div class="todo-header">
+                        <h4>Complete project proposal</h4>
+                        <span class="priority high">High Priority</span>
+                    </div>
+                    <p class="todo-description">Do a todo-list which must have Dashboard, Member and Payment.</p>
+                    <div class="todo-meta">
+                        <span class="due-date">Due: 2025-09-10</span>
+                        <div class="todo-actions">
+                            <button class="btn btn-small btn-success">Complete</button>
+                            <button class="btn btn-small btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <div class="todo-header">
+                        <h4>Learn GitHub</h4>
+                        <span class="priority high">High Priority</span>
+                    </div>
+                    <p class="todo-description">Learn about GitHub and how to use it.</p>
+                    <div class="todo-meta">
+                        <span class="due-date">Due: 2025-09-10</span>
+                        <div class="todo-actions">
+                            <button class="btn btn-small btn-success">Complete</button>
+                            <button class="btn btn-small btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <div class="todo-header">
+                        <h4>Buy groceries</h4>
+                        <span class="priority medium">Medium Priority</span>
+                    </div>
+                    <p class="todo-description">Get milk, bread, eggs, and vegetables from the store.</p>
+                    <div class="todo-meta">
+                        <span class="due-date">Due: 2025-09-12</span>
+                        <div class="todo-actions">
+                            <button class="btn btn-small btn-success">Complete</button>
+                            <button class="btn btn-small btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <div class="todo-header">
+                        <h4>Call dentist</h4>
+                        <span class="priority low">Low Priority</span>
+                    </div>
+                    <p class="todo-description">Schedule annual dental checkup appointment.</p>
+                    <div class="todo-meta">
+                        <span class="due-date">Due: 2025-09-20</span>
+                        <div class="todo-actions">
+                            <button class="btn btn-small btn-success">Complete</button>
+                            <button class="btn btn-small btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

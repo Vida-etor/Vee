@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App - Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="mobile-menu-toggle">☰</button>
+    
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="sidebar-title">Todo List App</h1>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="dashboard.html" class="sidebar-link">📊 Dashboard</a></li>
+            <li><a href="member.html" class="sidebar-link">👤 Member</a></li>
+            <li><a href="payment.html" class="sidebar-link active">💳 Payment</a></li>
+            <li><a href="index.html" class="sidebar-link">🚪 Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="payment-container">
+            <h2>Payment Center</h2>
+            
+            <div class="payment-form">
+                <h3>Make a Payment</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="amount">Amount (₵):</label>
+                        <input type="number" id="amount" name="amount" step="0.01" min="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reference">Reference/Transaction ID:</label>
+                        <input type="text" id="reference" name="reference" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method:</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="mobile-money">Mobile money</option>
+                            <option value="credit-card">Credit Card</option>
+                            <option value="debit-card">Debit Card</option>
+                            <option value="bank-transfer">Bank Transfer</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="stripe">Stripe</option>
+                            <option value="apple-pay">Apple Pay</option>
+                            <option value="google-pay">Google Pay</option>
+                            <option value="crypto">Cryptocurrency</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment-type">Payment Type:</label>
+                        <select id="payment-type" name="payment-type" required>
+                            <option value="">Select Payment Type</option>
+                            <option value="subscription">Subscription</option>
+                            <option value="one-time">One-time Payment</option>
+                            <option value="refund">Refund</option>
+                            <option value="donation">Donation</option>
+                            <option value="purchase">Purchase</option>
+                            <option value="service">Service Fee</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Payment Description:</label>
+                        <textarea id="description" name="description" rows="3" placeholder="Describe what this payment is for..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="currency">Currency:</label>
+                        <select id="currency" name="currency">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="GHC">GH₵- Ghana cedis</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                            <option value="AUD">AUD - Australian Dollar</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment-date">Payment Date:</label>
+                        <input type="date" id="payment-date" name="payment-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="billing-address">Billing Address:</label>
+                        <textarea id="billing-address" name="billing-address" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">Additional Notes:</label>
+                        <textarea id="notes" name="notes" rows="2" placeholder="Any additional notes or comments..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="save-payment-method" name="save-payment-method">
+                            Save payment method for future use
+                        </label>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms-agreement" name="terms-agreement" required>
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Process Payment</button>
+                        <button type="button" class="btn btn-secondary">Save as Draft</button>
+                        <button type="reset" class="btn btn-outline">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="payment-history">
+                <h3>Payment History</h3>
+                <div class="payment-item">
+                    <div class="payment-header">
+                        <span class="payment-amount">₵25.00</span>
+                        <span class="payment-status completed">Completed</span>
+                    </div>
+                    <div class="payment-details">
+                        <p><strong>Reference:</strong> TXN-2024-001</p>
+                        <p><strong>Method:</strong> Credit Card</p>
+                        <p><strong>Date:</strong> 2025-09-10</p>
+                        <p><strong>Description:</strong> Monthly subscription</p>
+                    </div>
+                </div>
+                
+                <div class="payment-item">
+                    <div class="payment-header">
+                        <span class="payment-amount">₵15.00</span>
+                        <span class="payment-status pending">Pending</span>
+                    </div>
+                    <div class="payment-details">
+                        <p><strong>Reference:</strong> TXN-2024-002</p>
+                        <p><strong>Method:</strong> Mobile Money</p>
+                        <p><strong>Date:</strong> 2025-01-12</p>
+                        <p><strong>Description:</strong> One-time payment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

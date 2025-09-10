@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App - Member Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="mobile-menu-toggle">☰</button>
+    
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="sidebar-title">Todo List App</h1>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="dashboard.html" class="sidebar-link">📊 Dashboard</a></li>
+            <li><a href="member.html" class="sidebar-link active">👤 Member</a></li>
+            <li><a href="payment.html" class="sidebar-link">💳 Payment</a></li>
+            <li><a href="index.html" class="sidebar-link">🚪 Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="member-container">
+            <h2>Member Profile</h2>
+            
+            <div class="profile-form">
+                <h3>Personal Information</h3>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date-of-birth">Date of Birth:</label>
+                        <input type="date" id="date-of-birth" name="date-of-birth" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="state">State/Province:</label>
+                            <input type="text" id="state" name="state">
+                        </div>
+                        <div class="form-group">
+                            <label for="zip-code">ZIP/Postal Code:</label>
+                            <input type="text" id="zip-code" name="zip-code">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="">Select Country</option>
+                            <option value="GH">Ghana</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="KE">Kenya</option>
+                            <option value="SA">South Africa</option>
+                            <option value="ZW">Zimbabwe</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="TZ">Tanzania</option>
+                            <option value="UG">Uganda</option>
+                            <option value="EG">Egypt</option>
+                            <option value="IN">India</option>
+                            <option value="CN">China</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="AU">Australia</option>
+                            <option value="DE">Germany</option>
+                            <option value="FR">France</option>
+                            <option value="JP">Japan</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description/Bio:</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Tell us about yourself..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="occupation">Occupation:</label>
+                        <input type="text" id="occupation" name="occupation">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interests">Interests/Hobbies:</label>
+                        <textarea id="interests" name="interests" rows="3" placeholder="What are your interests and hobbies?"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="emergency-contact">Emergency Contact:</label>
+                        <input type="text" id="emergency-contact" name="emergency-contact">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="emergency-phone">Emergency Contact Phone:</label>
+                        <input type="tel" id="emergency-phone" name="emergency-phone">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Save Profile</button>
+                    <button type="button" class="btn btn-secondary">Reset Form</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
